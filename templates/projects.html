@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+{% block title %} Projects {% endblock %}
+
+{% block content %}
+        <h1 class="pb-5">My Latest Projects</h1>
+        <div class="card mb-3" style="max-width: 540px;">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="static/images/walkingapp.png" class="img-fluid rounded-start" alt="WalkingApp image">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">WalkingApp</h5>
+                <p class="card-text">A small Android app for tracking walks and showing statistics.</p>
+                <p> Created with Python, Flet and SQLite3</p>
+                <p class="card-text">
+                  <a href="https://github.com/SandraHeinzova/WalkingApp" class="card-link" target="_blank">
+                    <small class="text-body-secondary">Full code available on GitHub</small></a>
+                </p>              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-3" style="max-width: 540px;">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="static/images/menugenerator.jpg" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">MenuGenerator</h5>
+                <p class="card-text">A desktop program for generating a menu, as an idea what to cook.
+                  Ideal for a families.</p>
+                <p> Created with Python, Tkinter and SMTP </p>
+                <p class="card-text">
+                  <a href="https://github.com/SandraHeinzova/MenuGenerator" class="card-link" target="_blank">
+                    <small class="text-body-secondary">Full code available on GitHub</small></a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+{% endblock %}

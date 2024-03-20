@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+{% block title %} Home {% endblock %}
+
+{% block content %}
+      <main class="px-3">
+        <h1>Hello World!</h1>
+          <div class="ps-5 pt-3">
+            <div class="home-page ps-5">
+                <h2>if impression >= requirements:</h2>
+                <h2 class="ps-5">offer_job()</h2>
+            </div>
+          </div>
+        <p class="lead pt-5">
+          <a href="{{ url_for('about') }}" class="btn btn-lg btn-light fw-bold border-white bg-white">>>></a>
+        </p>
+      </main>
+
+{% endblock %}
