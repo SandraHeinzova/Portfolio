@@ -11,8 +11,8 @@ app = Flask(__name__)
 bootstrap = Bootstrap5(app)
 
 app.config['SECRET_KEY'] = "secretkey"
-my_email = "your_own@gmail.com"
-PASSWORD_EMAIL = "your_own_password"
+my_email = "heinzova.sandra@gmail.com"
+PASSWORD_EMAIL = "gevyphukpbcfjxho"
 
 
 class ContactForm(FlaskForm):
