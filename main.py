@@ -5,6 +5,7 @@ from flask_wtf import FlaskForm
 from flask_bootstrap import Bootstrap5
 import smtplib
 from email.message import EmailMessage
+import os
 
 
 app = Flask(__name__)
@@ -12,7 +13,7 @@ bootstrap = Bootstrap5(app)
 
 app.config['SECRET_KEY'] = "secretkey"
 my_email = "heinzova.sandra@gmail.com"
-PASSWORD_EMAIL = "gevyphukpbcfjxho"
+PASSWORD_EMAIL = os.environ["SMTPLIB_PASS"]
 
 
 class ContactForm(FlaskForm):
@@ -57,4 +58,4 @@ def contact():
 
 
 if __name__ == "__main__":
-    app.run(debug=True, port=2000)
+    app.run(debug=True)
