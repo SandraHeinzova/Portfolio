@@ -71,19 +71,21 @@ body {
   cursor: pointer;
 }
 
-.card-body {
-  font-size: 1rem; /* Nezměňujte tuto hodnotu */
-}
 
-/* Media query pro zmenšení velikosti písma, pokud je šířka okna menší než 550px */
 @media (max-width: 770px) {
-    .card-body {
-    font-size: 0.8rem; /* Změňte na požadovanou velikost pro menší okna */
+    .card-text {
+    font-size: 0.8rem;
+  }
+     .card-title {
+    font-size: 0.9rem;
   }
 }
 
 @media (max-width: 570px) {
-    .card-body {
-    font-size: 0.7rem; /* Změňte na požadovanou velikost pro menší okna */
+    .card-text {
+    font-size: 0.7rem;
+  }
+    .card-title {
+    font-size: 0.8rem;
   }
 }
