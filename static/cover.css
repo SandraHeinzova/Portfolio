@@ -51,7 +51,10 @@ body {
 
 
 .text-bg-dark {
-  background-image: url('images/black_water.jpg')
+  background-image: url('images/black_purple.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
 }
 
 .home-page {
@@ -59,7 +62,7 @@ body {
 }
 
 .differ {
-  color: #DCC0FF;
+  color: #cea7ff;
 }
 
 .feature-icon {
