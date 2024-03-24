@@ -97,3 +97,11 @@ body {
 .icon {
   color: white;
 }
+
+.icon:hover {
+   color: #cea7ff;
+}
+
+.icons-container p {
+  text-align: left;
+}

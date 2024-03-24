@@ -4,7 +4,33 @@
 {% block title %} Contact Me {% endblock %}
 
 {% block content %}
-      <main class="px-3">
+      <div class="container pb-5">
+          <div class="row rows-cols-2">
+              <div class="col pt-4">
+                    <p>email</p>
+                    <p>telefon</p>
+                    <p>adresa</p>
+              </div>
+            <div class="icons-container col pt-4">
+              <p>
+               <a href="https://www.linkedin.com/in/sandra-heinzova/" target="_blank" class="icon text-decoration-none pe-5">
+                <img src="static/icons/linkedin.svg" alt="LinkedIn icon" title="Open LinkedIn">&nbsp;&nbsp;&nbsp;LinkdedIn
+               </a>
+              </p>
+              <p>
+               <a href="https://github.com/SandraHeinzova" target="_blank" class="icon text-decoration-none pe-5">
+                <img src="static/icons/github.svg" alt="Github icon" title="Open GitHub">&nbsp;&nbsp;&nbsp;GitHub
+               </a>
+              </p>
+              <p>
+               <a href="static/cv_en.pdf" download target="_blank" class="icon text-decoration-none pe-5">
+                <img src="static/icons/person_cv.svg" alt="Person CV icon" title="Download CV">&nbsp;&nbsp;&nbsp;Download CV in PDF
+               </a>
+              </p>
+            </div>
+          </div>
+      </div>
+      <div class="px-3">
         <h1>Contact</h1>
         <p>Do you have anything on your mind? Feel free to contact me.</p>
            <p>
@@ -24,7 +50,6 @@
                     </div>
                 </div>
              {% endif %}
-           </p>
-      </main>
+      </div>
 
 {% endblock %}
