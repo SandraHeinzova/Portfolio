@@ -4,12 +4,18 @@
 {% block title %} Contact Me {% endblock %}
 
 {% block content %}
-      <div class="container pb-5">
-          <div class="row rows-cols-2">
+      <div class="container pb-5 ps-5">
+          <div class="icons-container row rows-cols-2">
               <div class="col pt-4">
-                    <p>email</p>
-                    <p>telefon</p>
-                    <p>adresa</p>
+                <p>
+                 <a href="mailto: heinzova.sandra@gmail.com" class="icon text-decoration-none">
+                  <img src="static/icons/envelope-at.svg" alt="Mail envelope icon" title="Send message">&nbsp;&nbsp;&nbsp;heinzova.sandra@gmail.com
+                 </a>
+                </p>
+                <p>
+                 <a href="tel:+420731261194" class="icon text-decoration-none">
+                   <img src="static/icons/telephone.svg" alt="mobile phone icon" title="Call me">&nbsp;&nbsp;&nbsp;+420 731 261 194
+                 </a>
               </div>
             <div class="icons-container col pt-4">
               <p>
@@ -22,29 +28,19 @@
                 <img src="static/icons/github.svg" alt="Github icon" title="Open GitHub">&nbsp;&nbsp;&nbsp;GitHub
                </a>
               </p>
-              <p>
-               <a href="static/cv_en.pdf" download target="_blank" class="icon text-decoration-none pe-5">
-                <img src="static/icons/person_cv.svg" alt="Person CV icon" title="Download CV">&nbsp;&nbsp;&nbsp;Download CV in PDF
-               </a>
-              </p>
             </div>
           </div>
       </div>
       <div class="px-3">
-        <h1>Contact</h1>
-        <p>Do you have anything on your mind? Feel free to contact me.</p>
+        <h1>Contact Me</h1>
+        <p>Do you have anything on your mind? You can contact me right away with this form.</p>
            <p>
              {{ render_form(form) }}
              {% if message_sent %}
                 <div class="mt-4">
-                  <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
-                      <symbol id="check-circle-fill" fill="currentColor" viewBox="0 0 16 16">
-                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"></path>
-                      </symbol>
-                  </svg>
                     <div class="alert alert-success d-flex align-items-center" role="alert">
-                      <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Success:"><use xlink:href="#check-circle-fill"></use></svg>
-                      <div>
+                      <img src="static/icons/check-circle-fill.svg">
+                      <div class="ps-2">
                         Your message was successfully sent to me!
                       </div>
                     </div>
