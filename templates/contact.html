@@ -4,40 +4,37 @@
 {% block title %} Contact Me {% endblock %}
 
 {% block content %}
-      <div class="row align-items-justify mb-3">
-        <div class="col">
-          <a href="mailto:heinzova.sandra@gmail.com" class="icon-text text-decoration-none">
-             <img src="static/icons/envelope-at.svg" alt="Mail envelope icon" title="Send message">heinzova.sandra@gmail.com
-          </a>
+      <div class="row justify-content-evenly pb-5 pt-5">
+        <div class="col-4 contact-icons">
+              <div class="row email pt-3 mt-3 pb-3">
+                  <a href="mailto:heinzova.sandra@gmail.com" class="icon-text text-decoration-none">
+                     <img src="static/icons/envelope-at.svg" alt="Mail envelope icon" title="Send message">heinzova.sandra@gmail.com
+                  </a>
+              </div>
+              <div class="row phone mt-3 pb-3">
+                  <a href="tel:+420731261194" class="icon-text text-decoration-none">
+                     <img src="static/icons/telephone.svg" alt="mobile phone icon" title="Call me">+420 731 261 194
+                  </a>
+              </div>
+              <div class="row cv mt-3 pb-3">
+                 <a href="static/cv_en.pdf" download class="icon-text text-decoration-none">
+                   <img src="static/icons/person_cv.svg" alt="Person icon" title="Download">Download CV in PDF
+                 </a>
+              </div>
+              <div class="row linkedin mt-3 pb-3">
+                  <a href="https://www.linkedin.com/in/sandra-heinzova/" target="_blank" class="icon-text text-decoration-none">
+                     <img src="static/icons/linkedin.svg" alt="LinkedIn icon" title="Open LinkedIn">LinkedIn
+                  </a>
+              </div>
+              <div class="row github mt-3 pb-3">
+                 <a href="https://github.com/SandraHeinzova" target="_blank" class="icon-text text-decoration-none">
+                    <img src="static/icons/github.svg" alt="Github icon" title="Open GitHub">GitHub
+                 </a>
+              </div>
         </div>
-        <div class="col">
-          <a href="tel:+420731261194" class="icon-text text-decoration-none">
-             <img src="static/icons/telephone.svg" alt="mobile phone icon" title="Call me">+420 731 261 194
-          </a>
-        </div>
-      </div>
-     <div class="row align-items-justify mb-3">
-        <div class="col text-center">
-         <a href="static/cv_en.pdf" download class="icon-text text-decoration-none">
-           <img src="static/icons/person_cv.svg" alt="Person icon" title="Download">Download EN CV (PDF)
-         </a>
-        </div>
-     </div>
-     <div class="row align-items-justify mb-3">
-        <div class="col text-center">
-         <a href="https://www.linkedin.com/in/sandra-heinzova/" target="_blank" class="icon-text text-decoration-none">
-          <img src="static/icons/linkedin.svg" alt="LinkedIn icon" title="Open LinkedIn">LinkedIn
-         </a>
-        </div>
-        <div class="col">
-         <a href="https://github.com/SandraHeinzova" target="_blank" class="icon-text text-decoration-none">
-          <img src="static/icons/github.svg" alt="Github icon" title="Open GitHub">GitHub
-         </a>
-        </div>
-     </div>
-     <div class="px-3 pb-3 pt-3">
-        <h1>Contact Me</h1>
-        <p>Do you have anything on your mind? You can contact me right away with this form.</p>
+        <div class="col-4 contact-form pt-3 mt-3 pb-3">
+          <h1>Contact Me</h1>
+          <p>Do you have anything on your mind?</p>
            <p>
              {{ render_form(form) }}
              {% if message_sent %}
@@ -50,7 +47,7 @@
                     </div>
                 </div>
              {% endif %}
-
-     </div>
+        </div>
+      </div>
 
 {% endblock %}
