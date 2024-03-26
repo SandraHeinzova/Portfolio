@@ -4,39 +4,38 @@
 {% block title %} Contact Me {% endblock %}
 
 {% block content %}
-      <div class="container pb-5 ps-5">
-            <div class="icons-container row rows-cols-2 ps-5">
-              <div class="col pt-4">
-                <p>
-                 <a href="mailto: heinzova.sandra@gmail.com" class="icon text-decoration-none">
-                  <img src="static/icons/envelope-at.svg" alt="Mail envelope icon" title="Send message">&nbsp;&nbsp;&nbsp;heinzova.sandra@gmail.com
-                 </a>
-                </p>
-                <p>
-                 <a href="tel:+420731261194" class="icon text-decoration-none">
-                   <img src="static/icons/telephone.svg" alt="mobile phone icon" title="Call me">&nbsp;&nbsp;&nbsp;+420 731 261 194
-                 </a>
-              </div>
-              <div class="col pt-4">
-                <p>
-                 <a href="https://www.linkedin.com/in/sandra-heinzova/" target="_blank" class="icon text-decoration-none pe-5">
-                  <img src="static/icons/linkedin.svg" alt="LinkedIn icon" title="Open LinkedIn">&nbsp;&nbsp;&nbsp;LinkedIn
-                 </a>
-                </p>
-                <p>
-                 <a href="https://github.com/SandraHeinzova" target="_blank" class="icon text-decoration-none pe-5">
-                  <img src="static/icons/github.svg" alt="Github icon" title="Open GitHub">&nbsp;&nbsp;&nbsp;GitHub
-                 </a>
-                </p>
-              </div>
-            </div>
-            <div class="pt-3">
-              <a href="static/cv_en.pdf" download class="icon text-decoration-none pe-5">
-               <img src="static/icons/person_cv.svg" alt="Person icon" title="Download">&nbsp;&nbsp;&nbsp;Download CV in PDF
-              </a>
-            </div>
+      <div class="row align-items-justify mb-5">
+        <div class="col">
+          <a href="mailto: heinzova.sandra@gmail.com" class="icon-text text-decoration-none">
+             <img src="static/icons/envelope-at.svg" alt="Mail envelope icon" title="Send message">heinzova.sandra@gmail.com
+          </a>
+        </div>
+        <div class="col">
+          <a href="tel:+420731261194" class="icon-text text-decoration-none">
+             <img src="static/icons/telephone.svg" alt="mobile phone icon" title="Call me">+420 731 261 194
+          </a>
+        </div>
       </div>
-      <div class="px-3 pb-3">
+     <div class="row align-items-justify mb-5">
+        <div class="col text-center">
+         <a href="static/cv_en.pdf" download class="icon-text text-decoration-none">
+           <img src="static/icons/person_cv.svg" alt="Person icon" title="Download">Download EN CV (PDF)
+         </a>
+        </div>
+     </div>
+     <div class="row align-items-justify mb-5">
+        <div class="col text-center">
+         <a href="https://www.linkedin.com/in/sandra-heinzova/" target="_blank" class="icon-text text-decoration-none">
+          <img src="static/icons/linkedin.svg" alt="LinkedIn icon" title="Open LinkedIn">LinkedIn
+         </a>
+        </div>
+        <div class="col">
+         <a href="https://github.com/SandraHeinzova" target="_blank" class="icon-text text-decoration-none">
+          <img src="static/icons/github.svg" alt="Github icon" title="Open GitHub">GitHub
+         </a>
+        </div>
+     </div>
+     <div class="px-3 pb-3 pt-3">
         <h1>Contact Me</h1>
         <p>Do you have anything on your mind? You can contact me right away with this form.</p>
            <p>
@@ -51,6 +50,7 @@
                     </div>
                 </div>
              {% endif %}
-      </div>
+
+     </div>
 
 {% endblock %}

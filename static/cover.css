@@ -82,27 +82,39 @@ body {
 
 @media (max-width: 770px) {
     .card-text {
-    font-size: 0.8rem;
+      font-size: 0.8rem;
   }
-     .card-title {
-    font-size: 0.9rem;
+    .card-title {
+      font-size: 0.9rem;
   }
 }
 
 @media (max-width: 570px) {
     .card-text {
-    font-size: 0.7rem;
+      font-size: 0.7rem;
   }
     .card-title {
-    font-size: 0.8rem;
+      font-size: 0.8rem;
+  }
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
   }
 }
 
-.icon {
+.icon-text {
   color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 0.9rem;
 }
 
-.icon:hover {
+.icon-text img {
+  margin-bottom: 10px; /* Adjust this value to increase or decrease space */
+}
+.icon-text:hover {
    color: #cea7ff;
 }
 
