@@ -58,7 +58,6 @@ body {
   background-image: url('images/background.svg');
   background-size: cover;
   background-position: center;
-  height: 100vh;
 }
 
 .home-page {
