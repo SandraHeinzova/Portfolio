@@ -55,7 +55,7 @@ body {
 
 
 .text-bg-dark {
-  background-image: url('images/black_purple.jpg');
+  background-image: url('images/background.svg');
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -112,7 +112,7 @@ body {
 }
 
 .icon-text img {
-  margin-bottom: 10px; /* Adjust this value to increase or decrease space */
+  margin-bottom: 10px;
 }
 .icon-text:hover {
    color: #cea7ff;
