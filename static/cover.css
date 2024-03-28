@@ -2,6 +2,9 @@
  * Globals
  */
 
+body {
+    background-color: var(--bs-dark);
+}
 
 /* Custom default button */
 .btn-light,
@@ -65,9 +68,8 @@ footer {
 
 
 .text-bg-dark {
-  background-image: url('images/background.png');
-  background-size: cover;
-  background-position: center;
+    background: rgb(0,0,0);
+    background: linear-gradient(355deg, rgba(0,0,0,1) 18%, rgba(34,4,55,1) 88%);
 }
 
 .home-page {
