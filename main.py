@@ -17,9 +17,9 @@ PASSWORD_EMAIL = os.environ["SMTPLIB_PASS"]
 
 
 class ContactForm(FlaskForm):
-    name = StringField(label="", validators=[DataRequired()], render_kw={"placeholder": "Name"})
-    email = EmailField(label="", validators=[DataRequired(), Email()], render_kw={"placeholder": "Email"})
-    message = TextAreaField(label="", validators=[DataRequired()], render_kw={"placeholder": "Message"})
+    name = StringField(label="Name", validators=[DataRequired()])
+    email = EmailField(label="Email", validators=[DataRequired(), Email()])
+    message = TextAreaField(label="Message", validators=[DataRequired()])
     send = SubmitField("Send")
 
 

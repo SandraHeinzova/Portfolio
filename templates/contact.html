@@ -5,6 +5,12 @@
 
 {% block content %}
       <div class="row justify-content-evenly pb-5 pt-5">
+        <div class="col-4 contact-form pt-3 mt-3 pb-3">
+          <h1>Contact Me</h1>
+          <p>Do you have anything on your mind?</p>
+           <p>
+             {{ render_form(form) }}
+        </div>
         <div class="col-4 contact-icons">
               <div class="row email pt-3 mt-3 pb-3">
                   <a href="mailto:heinzova.sandra@gmail.com" class="icon-text text-decoration-none">
@@ -32,22 +38,15 @@
                  </a>
               </div>
         </div>
-        <div class="col-4 contact-form pt-3 mt-3 pb-3">
-          <h1>Contact Me</h1>
-          <p>Do you have anything on your mind?</p>
-           <p>
-             {{ render_form(form) }}
-             {% if message_sent %}
-                <div class="mt-4">
-                    <div class="alert alert-success d-flex align-items-center" role="alert">
-                      <img src="static/icons/check-circle-fill.svg">
-                      <div class="ps-2">
-                        Your message was successfully sent to me!
-                      </div>
-                    </div>
+         {% if message_sent %}
+            <div class="mt-4">
+                <div class="alert alert-success d-flex align-items-center" role="alert">
+                  <img src="static/icons/check-circle-fill.svg">
+                  <div class="ps-2">
+                    Your message was successfully sent to me!
+                  </div>
                 </div>
-             {% endif %}
+            </div>
+         {% endif %}
         </div>
-      </div>
-
 {% endblock %}
