@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 {% extends 'base.html' %}
-{% from 'bootstrap5/form.html' import render_form %}
+{% from 'bootstrap5/form.html' import render_form, render_field %}
 {% block title %} Contact Me {% endblock %}
 
 {% block content %}
@@ -8,8 +8,13 @@
         <div class="col-4 contact-form pt-3 mt-3 pb-3">
           <h1>Contact Me</h1>
           <p>Do you have anything on your mind?</p>
-           <p>
-             {{ render_form(form) }}
+           <div class = "login-form">
+              {{ form.hidden_tag() }}
+              {{ render_field(form.name, class = "form-control bgcolor") }}
+              {{ render_field(form.email, class = "form-control") }}
+              {{ render_field(form.message, class = "form-control") }}
+              {{ render_field(form.send, class = "btn btn-primary") }}
+            </div>
         </div>
         <div class="col-4 contact-icons">
               <div class="row email pt-3 mt-3 pb-3">

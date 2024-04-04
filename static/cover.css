@@ -127,3 +127,15 @@ body {
 .icons-container p {
   text-align: justify;
 }
+
+#name, #email, #message {
+  background: transparent;
+  border: 1px solid #8e8e8e;
+
+}
+
+#send {
+    color: black;
+    background-color: #cea7ff;
+    border-style: hidden;
+}
